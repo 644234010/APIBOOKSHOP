@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/v2/users/auth/register HTTP/1.1
+content-type: application/json
+
+{
+      "username": "admin3@gmail.com",
+      "role": "admin",
+      "password": "password"
+}
+
+###
+
+POST http://localhost:3000/api/v2/users/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+      "username": "admin3@gmail.com",
+      "role": "admin",
+      "password": "password"
+}
+
+###

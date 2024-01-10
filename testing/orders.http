@@ -1,0 +1,15 @@
+### -------- Get All Orders
+GET http://localhost:3000/api/v2/orders HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vbzQiLCJwYXNzd29yZCI6IiQyYSQxMCQuSlk3YlZNbGZrcFhkN21DL0VlQk0uRVdYMXFqZjJoTy5LdE9qaFkvUndSTmUyZE94TWxMYSIsImlhdCI6MTY2NTYzNzE5NX0.0HImJfXnfBeYfIJiojx-OJoTpUBDWaWGdGZ70d9S5sg
+
+### -------- Get Order by User ID
+GET http://localhost:3000/api/v2/orders/user/1 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vbzQiLCJwYXNzd29yZCI6IiQyYSQxMCQuSlk3YlZNbGZrcFhkN21DL0VlQk0uRVdYMXFqZjJoTy5LdE9qaFkvUndSTmUyZE94TWxMYSIsImlhdCI6MTY2NTYzNzE5NX0.0HImJfXnfBeYfIJiojx-OJoTpUBDWaWGdGZ70d9S5sg
+
+### -------- Get Order by Order Id
+GET http://localhost:3000/api/v2/orders/order/92 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vbzQiLCJwYXNzd29yZCI6IiQyYSQxMCQuSlk3YlZNbGZrcFhkN21DL0VlQk0uRVdYMXFqZjJoTy5LdE9qaFkvUndSTmUyZE94TWxMYSIsImlhdCI6MTY2NTYzNzE5NX0.0HImJfXnfBeYfIJiojx-OJoTpUBDWaWGdGZ70d9S5sg
+

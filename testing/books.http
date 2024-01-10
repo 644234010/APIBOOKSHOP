@@ -1,0 +1,21 @@
+GET http://localhost:3000/api/v2/books HTTP/1.1
+content-type: application/json
+Authorization: bearer eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluM0BnbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCRiMlBVQzI1VkcudEp0M2dXWmlCOFUuYTdBc3pmOFhBemd0bWxFVEJoeWt2eTRKYmlxZDUuTyIsImlhdCI6MTY5NzY4NzY4NX0.cryS10l0Ik8znIOFdoBKAjWsr-0HOdL8UfEo-k9sDHc
+
+### -------- Get Book by Book Id
+GET http://localhost:3000/api/v2/books/3 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vbzQiLCJwYXNzd29yZCI6IiQyYSQxMCQuSlk3YlZNbGZrcFhkN21DL0VlQk0uRVdYMXFqZjJoTy5LdE9qaFkvUndSTmUyZE94TWxMYSIsImlhdCI6MTY2NTYzNzE5NX0.0HImJfXnfBeYfIJiojx-OJoTpUBDWaWGdGZ70d9S5sg
+
+### -------- Add Book & Cover Picture
+POST http://localhost:3000/api/v2/books HTTP/1.1
+Content-Type: multipart/form-data; boundary=boundary
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5vbzQiLCJwYXNzd29yZCI6IiQyYSQxMCQuSlk3YlZNbGZrcFhkN21DL0VlQk0uRVdYMXFqZjJoTy5LdE9qaFkvUndSTmUyZE94TWxMYSIsImlhdCI6MTY2NTYzNzE5NX0.0HImJfXnfBeYfIJiojx-OJoTpUBDWaWGdGZ70d9S5sg
+
+--boundary
+Content-Disposition: form-data; name="datamining.jpg"; filename="datamining.jpg"
+Content-Type: image/jpeg
+
+< datamining.jpg
+--boundary--
+
